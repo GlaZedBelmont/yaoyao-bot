@@ -86,8 +86,9 @@ async def list_cogs(ctx):
 
 @bot.command()
 async def membercount(ctx):
-    """How many awws do we have in here?"""
+    """How many peeps do we have in here?"""
     await ctx.send(f'{ctx.guild} has {ctx.guild.member_count:,} peeps!')
+    
 # Error Handler
 @bot.event
 async def on_command_error(ctx, error):
